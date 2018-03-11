@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{926378F0-282C-42AA-9B33-09808490E60F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Sistema de Información Odontotech</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Diego\Desktop\instaladores\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema de Información Odontotech.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema de Información Odontotech.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8F4C16884B1EAB0AED5F37DD50E1AB0EEF5FD7A7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Odontologia_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=12.5.0.2, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=12.5.0.2, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=12.5.0.2, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\Users\Diego\Downloads\Compressed\MaterialSkin-master\MaterialSkin-master\MaterialSkin\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Basic 2005 Power Packs\3.0\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=7.0.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 7.0.6\Assemblies\v4.5.1\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar_Paciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_Paciente.Designer.vb">
+      <DependentUpon>Agregar_Paciente.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="cambiar_estatus.Designer.vb">
+      <DependentUpon>cambiar_estatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cambiar_estatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conexion.vb" />
+    <Compile Include="Consultar_Pacientes.Designer.vb">
+      <DependentUpon>Consultar_Pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar_Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda_pacientes.Designer.vb">
+      <DependentUpon>Ayuda_pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda_pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayuda_odontograma.Designer.vb">
+      <DependentUpon>ayuda_odontograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ayuda_odontograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_Medico.Designer.vb">
+      <DependentUpon>Agregar_Medico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_Medico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consulta_doctores.Designer.vb">
+      <DependentUpon>consulta_doctores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="consulta_doctores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda_doctor.Designer.vb">
+      <DependentUpon>Ayuda_doctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda_doctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregar_usuario.Designer.vb">
+      <DependentUpon>agregar_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="agregar_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar_Usuarios.Designer.vb">
+      <DependentUpon>Consultar_Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda_Usuarios.Designer.vb">
+      <DependentUpon>Ayuda_Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos.Designer.vb">
+      <DependentUpon>Catalogos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_trabajos.Designer.vb">
+      <DependentUpon>Agregar_trabajos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_trabajos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="control_cita.Designer.vb">
+      <DependentUpon>control_cita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="control_cita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fecha_citas.Designer.vb">
+      <DependentUpon>fecha_citas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fecha_citas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anamnesis.Designer.vb">
+      <DependentUpon>Anamnesis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anamnesis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja.Designer.vb">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_caja.Designer.vb">
+      <DependentUpon>Estado_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja_paciente.Designer.vb">
+      <DependentUpon>Caja_paciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caja_paciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargos.Designer.vb">
+      <DependentUpon>Cargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abono_caja.Designer.vb">
+      <DependentUpon>Abono_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Abono_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imagenes.Designer.vb">
+      <DependentUpon>Imagenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imagenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PacientesCita.Designer.vb">
+      <DependentUpon>PacientesCita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PacientesCita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_presupuesto.Designer.vb">
+      <DependentUpon>reporte_presupuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_presupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_ec.Designer.vb">
+      <DependentUpon>reporte_ec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_ec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presupuesto.Designer.vb">
+      <DependentUpon>presupuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="presupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recibo_Pago.Designer.vb">
+      <DependentUpon>Recibo_Pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recibo_Pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presupuesto_pacientes.Designer.vb">
+      <DependentUpon>Presupuesto_pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presupuesto_pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources.vb" />
+    <Compile Include="Respuestas_anamnesis.Designer.vb">
+      <DependentUpon>Respuestas_anamnesis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Respuestas_anamnesis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sistema.Designer.vb">
+      <DependentUpon>sistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sistema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odontograma.Designer.vb">
+      <DependentUpon>Odontograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Odontograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Historia clinica.designer.vb">
+      <DependentUpon>Historia clinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Historia clinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agregar_Paciente.resx">
+      <DependentUpon>Agregar_Paciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda_Usuarios.resx">
+      <DependentUpon>Ayuda_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cambiar_estatus.resx">
+      <DependentUpon>cambiar_estatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar_Pacientes.resx">
+      <DependentUpon>Consultar_Pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda_pacientes.resx">
+      <DependentUpon>Ayuda_pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayuda_odontograma.resx">
+      <DependentUpon>ayuda_odontograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_Medico.resx">
+      <DependentUpon>Agregar_Medico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consulta_doctores.resx">
+      <DependentUpon>consulta_doctores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda_doctor.resx">
+      <DependentUpon>Ayuda_doctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregar_usuario.resx">
+      <DependentUpon>agregar_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar_Usuarios.resx">
+      <DependentUpon>Consultar_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control_cita.resx">
+      <DependentUpon>control_cita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_caja.resx">
+      <DependentUpon>Estado_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fecha_citas.resx">
+      <DependentUpon>fecha_citas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos.resx">
+      <DependentUpon>Catalogos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_trabajos.resx">
+      <DependentUpon>Agregar_trabajos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anamnesis.resx">
+      <DependentUpon>Anamnesis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja.resx">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja_paciente.resx">
+      <DependentUpon>Caja_paciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargos.resx">
+      <DependentUpon>Cargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abono_caja.resx">
+      <DependentUpon>Abono_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes.resx">
+      <DependentUpon>Imagenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PacientesCita.resx">
+      <DependentUpon>PacientesCita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="reporte_ec.resx">
+      <DependentUpon>reporte_ec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presupuesto.resx">
+      <DependentUpon>presupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presupuesto_pacientes.resx">
+      <DependentUpon>Presupuesto_pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recibo_Pago.resx">
+      <DependentUpon>Recibo_Pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_presupuesto.resx">
+      <DependentUpon>reporte_presupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Respuestas_anamnesis.resx">
+      <DependentUpon>Respuestas_anamnesis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sistema.resx">
+      <DependentUpon>sistema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odontograma.resx">
+      <DependentUpon>Odontograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historia clinica.resx">
+      <DependentUpon>Historia clinica.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.CustomInstaller.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlBulkLoader.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlClientFactory.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlCommand.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlCommandBuilder.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlConnection.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlConnectionStringBuilder.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlDataAdapter.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlDataReader.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlError.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlException.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlHelper.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlInfoMessageEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlInfoMessageEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlParameter.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlParameterCollection.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatedEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatedEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatingEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatingEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScript.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScriptErrorEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScriptErrorEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlScriptEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlStatementExecutedEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlTrace.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlTransaction.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.Properties.Resources.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlConversionException.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlDateTime.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlDecimal.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Odontologia_ClaveTemporal.pfx" />
+    <None Include="Resources\52.PNG" />
+    <None Include="Resources\99.jpg" />
+    <None Include="Resources\991.jpg" />
+    <None Include="Resources\actualiser.png" />
+    <None Include="Resources\Amalgama.jpg" />
+    <None Include="Resources\ausencia.bmp" />
+    <None Include="Resources\Bin-Full.PNG" />
+    <None Include="Resources\blanco.bmp" />
+    <None Include="Resources\bracket.bmp" />
+    <None Include="Resources\button_cancel.png" />
+    <None Include="Resources\button_cancel1.png" />
+    <None Include="Resources\button_ok.png" />
+    <None Include="Resources\cal.png" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\cancelar.JPG" />
+    <None Include="Resources\carillas_de_porcelana.bmp" />
+    <None Include="Resources\Chief of Staff 2.png" />
+    <None Include="Resources\Copia  de plan.png" />
+    <None Include="Resources\corona.bmp" />
+    <None Include="Resources\CRISTAL KEY.png" />
+    <None Include="Resources\CRISTAL TRASH FULL.png" />
+    <None Include="Resources\CRISTAL TRASH FULL1.png" />
+    <None Include="Resources\Critical.png" />
+    <None Include="Resources\demo.png" />
+    <None Include="Resources\Dentist Add.png" />
+    <None Include="Resources\Dentist Add1.png" />
+    <None Include="Resources\Dentist Delete.png" />
+    <None Include="Resources\Dentist Edit 2.png" />
+    <None Include="Resources\Dentist Search.png" />
+    <None Include="Resources\Doctor 1 Add.png" />
+    <None Include="Resources\editar1.JPG" />
+    <None Include="Resources\edit_add.png" />
+    <None Include="Resources\endodoncia.bmp" />
+    <None Include="Resources\extraccion.bmp" />
+    <None Include="Resources\guardar1.JPG" />
+    <None Include="Resources\inf.png" />
+    <None Include="Resources\informe.jpg" />
+    <None Include="Resources\ODONTECH FONDO.png" />
+    <None Include="Resources\ODONTOTECH.png" />
+    <None Include="Resources\Patient Boy 1 Add.png" />
+    <None Include="Resources\Patient Girl 1 Green Add.png" />
+    <None Include="Resources\Patient Girl 2 Add.png" />
+    <None Include="Resources\Patient Man 1 Blue Edit 2.png" />
+    <None Include="Resources\Patient Man 1 Search.png" />
+    <None Include="Resources\Patient Man 2 Add.png" />
+    <None Include="Resources\Patient Man 2 Add1.png" />
+    <None Include="Resources\Patient Man 2 Delete.png" />
+    <None Include="Resources\Patient Man 2 Edit.png" />
+    <None Include="Resources\Patient Man 2 Green Add.png" />
+    <None Include="Resources\Patient Woman 1 Check.png" />
+    <None Include="Resources\Patient Woman 2 Add.png" />
+    <None Include="Resources\pspbrwse.jbf" />
+    <None Include="Resources\scanner1.JPG" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Teeth and Gums.png" />
+    <None Include="Resources\Teeth and Gums1.png" />
+    <None Include="Resources\Teeth and Gums2.png" />
+    <None Include="Resources\Teeth and Gums21.png" />
+    <None Include="Resources\Teeth and Gums22.png" />
+    <None Include="Resources\Tooth 2 Add.png" />
+    <None Include="Resources\Tooth 2 Clean.png" />
+    <None Include="Resources\Tooth 2 Delete.png" />
+    <None Include="Resources\Tooth 2 View.png" />
+    <None Include="Resources\Tooth 2.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apicetomia.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_de_cementacion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blanqueamiento.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corona metalica.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corona metalicaodontopediatria.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corona venneracrilico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corona vennerembiolo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curetaje.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desgastes_proximales.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferulizacion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incrustaciones.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yaquet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yaquet biolo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puente combinado.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puente ausente.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puente ausente1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puente acrilico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puente embiolo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puente porcelana.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pulpotomia.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiografia.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recubrimiento pulpar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tratamiento emergencia.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOLLAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOLLAR 24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printmgr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentistas-en-cumbres-icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_1949512794.png" />
+    <None Include="Resources\shutterstock_1949512793.png" />
+    <None Include="Resources\shutterstock_19495127921.png" />
+    <None Include="Resources\shutterstock_1949512792.png" />
+    <None Include="Resources\shutterstock_194951279.png" />
+    <None Include="Resources\37708-O1AVP3.png" />
+    <Content Include="Resources\Aplicacion Topica F.bmp" />
+    <Content Include="Resources\Arco de Howel.bmp" />
+    <Content Include="Resources\base.bmp" />
+    <Content Include="Resources\Blanqueamiento gral.bmp" />
+    <Content Include="Resources\button_cancel.ico" />
+    <Content Include="Resources\button_ok.ico" />
+    <Content Include="Resources\Ccleaner 3D v2 .ico" />
+    <Content Include="Resources\cirugia 3 molar.bmp" />
+    <Content Include="Resources\Cirugia en Encias.bmp" />
+    <Content Include="Resources\Cirugia en Lingual.bmp" />
+    <Content Include="Resources\Cirugia en Numerarios.bmp" />
+    <Content Include="Resources\Cirugia en Palatal.bmp" />
+    <Content Include="Resources\Cirugia en Periodontal.bmp" />
+    <Content Include="Resources\Cirugia en Tercer Molar.bmp" />
+    <Content Include="Resources\Cirugia en Torus Palatal.bmp" />
+    <Content Include="Resources\corona porcelana.bmp" />
+    <Content Include="Resources\Curetaje General.bmp" />
+    <Content Include="Resources\DENTA46.bmp" />
+    <None Include="Resources\dentistry.png" />
+    <Content Include="Resources\Detartraje.bmp" />
+    <None Include="Resources\doctor.png" />
+    <None Include="Resources\dotores.png" />
+    <None Include="Resources\Doctor-icon.png" />
+    <None Include="Resources\diente.png" />
+    <None Include="Resources\diente2.png" />
+    <Content Include="Resources\extra1.bmp" />
+    <Content Include="Resources\EXTRA10.bmp" />
+    <Content Include="Resources\extra2.bmp" />
+    <Content Include="Resources\extra3.bmp" />
+    <Content Include="Resources\EXTRA4.bmp" />
+    <Content Include="Resources\EXTRA5.bmp" />
+    <Content Include="Resources\EXTRA6.bmp" />
+    <Content Include="Resources\EXTRA7.bmp" />
+    <Content Include="Resources\EXTRA8.bmp" />
+    <Content Include="Resources\EXTRA9.bmp" />
+    <Content Include="Resources\Frenectomias.bmp" />
+    <Content Include="Resources\gralextra1.bmp" />
+    <Content Include="Resources\gralextra10.bmp" />
+    <Content Include="Resources\gralextra2.bmp" />
+    <Content Include="Resources\gralextra3.bmp" />
+    <Content Include="Resources\gralextra4.bmp" />
+    <Content Include="Resources\gralextra5.bmp" />
+    <Content Include="Resources\gralextra6.bmp" />
+    <Content Include="Resources\gralextra7.bmp" />
+    <Content Include="Resources\gralextra8.bmp" />
+    <Content Include="Resources\gralextra9.bmp" />
+    <Content Include="Resources\Guardas Oclusales.bmp" />
+    <None Include="Resources\Icon-history.png" />
+    <None Include="Resources\ic_done_black_24dp_1x.png" />
+    <None Include="Resources\ic_close_black_24dp_1x.png" />
+    <None Include="Resources\ic_account_circle_black_24dp_1x.png" />
+    <None Include="Resources\ic_mode_edit_black_24dp_1x.png" />
+    <None Include="Resources\ic_remove_black_24dp_1x.png" />
+    <None Include="Resources\ic_loop_black_24dp_1x.png" />
+    <None Include="Resources\ic_close_black_24dp_1x1.png" />
+    <None Include="Resources\ic_create_new_folder_black_24dp_1x.png" />
+    <None Include="Resources\ic_date_range_black_24dp_1x.png" />
+    <None Include="Resources\ic_find_in_page_black_24dp_1x.png" />
+    <None Include="Resources\ic_find_in_page_black_24dp_2x.png" />
+    <None Include="Resources\ic_perm_identity_white_48dp_2x.png" />
+    <None Include="Resources\ic_perm_identity_white_48dp_1x.png" />
+    <None Include="Resources\ic_save_white_48dp_1x.png" />
+    <None Include="Resources\ic_save_black_48dp_1x.png" />
+    <None Include="Resources\ic_add_black_48dp_1x.png" />
+    <None Include="Resources\ic_add_a_photo_white_48dp_2x.png" />
+    <None Include="Resources\ic_account_circle_white_48dp_2x.png" />
+    <None Include="Resources\ic_error_white_48dp_2x.png" />
+    <None Include="Resources\ic_build_white_48dp_2x.png" />
+    <None Include="Resources\ic_attach_money_white_48dp_2x.png" />
+    <None Include="Resources\ic_event_note_white_24dp_2x.png" />
+    <None Include="Resources\ic_event_note_white_48dp_2x.png" />
+    <None Include="Resources\ic_insert_chart_white_48dp_2x.png" />
+    <None Include="Resources\ic_doctor.png" />
+    <None Include="Resources\ic_doctor_female.png" />
+    <None Include="Resources\ic_help_outline_white_48dp_2x.png" />
+    <None Include="Resources\ic_help_outline_black_48dp_2x.png" />
+    <None Include="Resources\ic_help_outline_black_24dp_2x.png" />
+    <None Include="Resources\ic_help_outline_black_24dp_1x.png" />
+    <None Include="Resources\ic_content_paste_white_48dp_2x.png" />
+    <None Include="Resources\ic_replay_black_48dp_1x.png" />
+    <None Include="Resources\ic_refresh_black_48dp_1x.png" />
+    <None Include="Resources\ic_block_black_24dp_2x.png" />
+    <None Include="Resources\ic_view_comfy_white_48dp_1x.png" />
+    <None Include="Resources\ic_block_black_24dp_1x.png" />
+    <None Include="Resources\ic_description_white_48dp_2x.png" />
+    <None Include="Resources\ic_person_black_48dp_2x.png" />
+    <None Include="Resources\ic_person_black_48dp_1x.png" />
+    <None Include="Resources\ic_vpn_key_black_48dp_1x.png" />
+    <None Include="Resources\icon-doc.png" />
+    <None Include="Resources\ic_add_a_photo_black_48dp_2x.png" />
+    <None Include="Resources\ic_add_a_photo_black_24dp_1x.png" />
+    <None Include="Resources\ic_print_black_24dp_2x.png" />
+    <None Include="Resources\ic_monetization_on_black_24dp_2x.png" />
+    <None Include="Resources\ic_adjust_black_24dp_1x.png" />
+    <None Include="Resources\ic_cached_black_24dp_1x.png" />
+    <None Include="Resources\ic_restore_black_24dp_1x.png" />
+    <None Include="Resources\ic_lock_black_24dp_1x.png" />
+    <None Include="Resources\ic_power_settings_new_black_24dp_1x.png" />
+    <Content Include="Resources\incrustacion.bmp" />
+    <Content Include="Resources\Mantenedor.bmp" />
+    <None Include="Resources\patient.png" />
+    <Content Include="Resources\Pieza11.bmp" />
+    <Content Include="Resources\Pieza12.bmp" />
+    <Content Include="Resources\Pieza13.bmp" />
+    <Content Include="Resources\Pieza14.bmp" />
+    <Content Include="Resources\Pieza15.bmp" />
+    <Content Include="Resources\Pieza16.bmp" />
+    <Content Include="Resources\Pieza17.bmp" />
+    <Content Include="Resources\Pieza18.bmp" />
+    <Content Include="Resources\Pieza21.bmp" />
+    <Content Include="Resources\Pieza22.bmp" />
+    <Content Include="Resources\Pieza23.bmp" />
+    <Content Include="Resources\Pieza24.bmp" />
+    <Content Include="Resources\Pieza25.bmp" />
+    <Content Include="Resources\Pieza26.bmp" />
+    <Content Include="Resources\Pieza27.bmp" />
+    <Content Include="Resources\Pieza28.bmp" />
+    <Content Include="Resources\Pieza31.bmp" />
+    <Content Include="Resources\Pieza32.bmp" />
+    <Content Include="Resources\Pieza33.bmp" />
+    <Content Include="Resources\Pieza34.bmp" />
+    <Content Include="Resources\Pieza35.bmp" />
+    <Content Include="Resources\Pieza36.bmp" />
+    <Content Include="Resources\Pieza37.bmp" />
+    <Content Include="Resources\Pieza38.bmp" />
+    <Content Include="Resources\Pieza41.bmp" />
+    <Content Include="Resources\Pieza42.bmp" />
+    <Content Include="Resources\Pieza43.bmp" />
+    <Content Include="Resources\Pieza44.bmp" />
+    <Content Include="Resources\Pieza45.bmp" />
+    <Content Include="Resources\Pieza46.bmp" />
+    <Content Include="Resources\Pieza47.bmp" />
+    <Content Include="Resources\Pieza48.bmp" />
+    <Content Include="Resources\PIEZA51.BMP" />
+    <Content Include="Resources\PIEZA52.BMP" />
+    <Content Include="Resources\PIEZA53.BMP" />
+    <Content Include="Resources\PIEZA54.BMP" />
+    <Content Include="Resources\PIEZA55.BMP" />
+    <Content Include="Resources\PIEZA61.BMP" />
+    <Content Include="Resources\PIEZA62.BMP" />
+    <Content Include="Resources\PIEZA63.BMP" />
+    <Content Include="Resources\PIEZA64.BMP" />
+    <Content Include="Resources\PIEZA65.BMP" />
+    <Content Include="Resources\PIEZA71.BMP" />
+    <Content Include="Resources\PIEZA72.BMP" />
+    <Content Include="Resources\PIEZA73.BMP" />
+    <Content Include="Resources\PIEZA74.BMP" />
+    <Content Include="Resources\PIEZA75.BMP" />
+    <Content Include="Resources\PIEZA81.BMP" />
+    <Content Include="Resources\PIEZA82.BMP" />
+    <Content Include="Resources\PIEZA83.BMP" />
+    <Content Include="Resources\PIEZA84.BMP" />
+    <Content Include="Resources\PIEZA85.BMP" />
+    <Content Include="Resources\Profilaxis.bmp" />
+    <Content Include="Resources\Protesis Total A.bmp" />
+    <Content Include="Resources\Protesis Total p.bmp" />
+    <None Include="Resources\radiology.png" />
+    <Content Include="Resources\Reganadores.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
